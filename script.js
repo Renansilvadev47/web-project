@@ -1,7 +1,8 @@
 // CONFIG
 const whatsappNumero = "5553984280755";
 const mensagemPadrao = "Olá Patrícia tudo bem ? Quero agendar uma avaliação.";
-const instagramUsuario = "seuusuario"; // sem @
+const instagramUsuario = "@patriciadasilva599";
+const mensagemPadrao = "Olá Patrícia tudo bem ? Quero agendar uma avaliação.";
 
 // BOTÕES
 document.querySelectorAll(".btn").forEach(btn => {
