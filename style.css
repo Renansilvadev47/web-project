@@ -327,3 +327,11 @@ p{
 html {
   scroll-behavior: auto;
 }
+
+button[data-tipo] {
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+}
