@@ -7,16 +7,16 @@ const mensagemPadrao =
 const instagramUsuario = "patriciadasilva599";
 
 // BOTÕES
-document.querySelectorAll(".btn").forEach(btn => {
+document.querySelectorAll("button[data-tipo]").forEach(btn => {
 
   btn.addEventListener("click", (e) => {
+
+    e.preventDefault();
 
     const tipo = btn.dataset.tipo;
 
     // WHATSAPP
     if (tipo === "whatsapp") {
-
-      e.preventDefault();
 
       const url =
         `https://wa.me/${whatsappNumero}?text=${encodeURIComponent(mensagemPadrao)}`;
@@ -26,8 +26,6 @@ document.querySelectorAll(".btn").forEach(btn => {
 
     // INSTAGRAM
     if (tipo === "instagram") {
-
-      e.preventDefault();
 
       const urlInstagram =
         `https://instagram.com/${instagramUsuario}`;
