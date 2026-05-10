@@ -137,16 +137,42 @@ p{
    BOTÕES
 ========================= */
 .btn{
-  display:inline-block;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  width:100%;
+  max-width:320px;
+
+  min-height:58px;
+
   background:linear-gradient(135deg,#9321c0,#4ade80);
+
   color:white;
+
   padding:16px 28px;
+
   text-decoration:none;
+
+  border:none;
+  outline:none;
+
   border-radius:14px;
+
   font-weight:700;
+  font-size:16px;
+
   transition:0.3s;
+
   box-shadow:0 5px 15px rgba(34,197,94,0.3);
-  margin:10px;
+
+  margin:10px auto;
+
+  cursor:pointer;
+
+  gap:8px;
+
 }
 
 .btn:hover{
@@ -326,12 +352,4 @@ p{
 
 html {
   scroll-behavior: auto;
-}
-
-button[data-tipo] {
-
-  border: none;
-  outline: none;
-  box-shadow: none;
-
 }
