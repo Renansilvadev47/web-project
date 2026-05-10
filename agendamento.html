@@ -9,6 +9,7 @@
 <title>Agendamento</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -46,9 +47,17 @@ body{
 }
 
 @keyframes flutuar{
-  0%{transform:translateY(0px);}
-  50%{transform:translateY(-10px);}
-  100%{transform:translateY(0px);}
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
 }
 
 /* SECTION */
@@ -106,7 +115,6 @@ section::after{
   color:#fff;
   transform:translateY(-3px);
 }
-
 
 /* TITULOS */
 
@@ -249,33 +257,33 @@ label{
 
 @media(max-width:768px){
 
-section{
-  padding:30px 25px;
-}
+  section{
+    padding:30px 25px;
+  }
 
-h2{
-  font-size:38px;
-}
+  h2{
+    font-size:38px;
+  }
 
-p{
-  font-size:17px;
-}
+  p{
+    font-size:17px;
+  }
 
-.conteudo strong{
-  font-size:22px;
-}
+  .conteudo strong{
+    font-size:22px;
+  }
 
-.conteudo span{
-  font-size:16px;
-}
+  .conteudo span{
+    font-size:16px;
+  }
 
-.btn{
-  font-size:20px;
-}
+  .btn{
+    font-size:20px;
+  }
 
-.header-imagem img{
-  width:140px;
-}
+  .header-imagem img{
+    width:140px;
+  }
 
 }
 
@@ -309,13 +317,27 @@ Agendar Avaliação
 Preencha os dados abaixo e nossa equipe entrará em contato rapidamente:
 </p>
 
-<form class="form-agendamento">
+<form class="form-agendamento" id="formAgendamento">
 
-<input type="text" placeholder="Nome completo" required>
+<input
+type="text"
+id="nome"
+placeholder="Nome completo"
+required
+>
 
-<input type="tel" placeholder="Telefone (WhatsApp)" required>
+<input
+type="tel"
+id="telefone"
+placeholder="Telefone (WhatsApp)"
+required
+>
 
-<input type="email" placeholder="E-mail (opcional)">
+<input
+type="email"
+id="email"
+placeholder="E-mail (opcional)"
+>
 
 <label>
 TIPO DE AVALIAÇÃO:
@@ -325,7 +347,12 @@ TIPO DE AVALIAÇÃO:
 
 <label class="card-opcao">
 
-<input type="radio" name="tipo" value="clinica" required>
+<input
+type="radio"
+name="tipo"
+value="clinica"
+required
+>
 
 <div class="conteudo">
 
@@ -343,7 +370,11 @@ ATENDIMENTO NO ESPAÇO PREPARADO E ESTRUTURADO.
 
 <label class="card-opcao">
 
-<input type="radio" name="tipo" value="domiciliar">
+<input
+type="radio"
+name="tipo"
+value="domiciliar"
+>
 
 <div class="conteudo">
 
@@ -361,7 +392,11 @@ ATENDIMENTO NO CONFORTO DA SUA CASA.
 
 <label class="card-opcao">
 
-<input type="radio" name="tipo" value="online">
+<input
+type="radio"
+name="tipo"
+value="online"
+>
 
 <div class="conteudo">
 
@@ -379,7 +414,7 @@ ATRAVÉS DE CHAMADA DE VIDEO.
 
 </div>
 
-<button class="btn">
+<button class="btn" type="submit">
 Solicitar Agendamento
 </button>
 
@@ -387,11 +422,52 @@ Solicitar Agendamento
 
 </section>
 
+<script>
+
+const formulario =
+document.getElementById("formAgendamento");
+
+formulario.addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  const nome =
+    document.getElementById("nome").value;
+
+  const telefone =
+    document.getElementById("telefone").value;
+
+  const email =
+    document.getElementById("email").value;
+
+  const tipo =
+    document.querySelector(
+      'input[name="tipo"]:checked'
+    ).value;
+
+  const mensagem = `Olá Patrícia, quero solicitar um agendamento.
+
+Nome: ${nome}
+
+Telefone: ${telefone}
+
+Email: ${email}
+
+Tipo de avaliação: ${tipo}`;
+
+  const numero =
+    "555399702812";
+
+  const url =
+`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, "_blank");
+
+});
+
+</script>
+
 </body>
 </html>
-
-
-
-
 
 
