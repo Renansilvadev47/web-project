@@ -1,5 +1,5 @@
 // CONFIG
-const whatsappNumero = "5553984280755";
+const whatsappNumero = "5399702812";
 
 const mensagemPadrao =
   "Olá Patrícia tudo bem ? Quero agendar uma avaliação.";
