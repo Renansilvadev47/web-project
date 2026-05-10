@@ -2,7 +2,7 @@
 const whatsappNumero = "5399702812";
 
 const mensagemPadrao =
-  "Olá Patrícia tudo bem ? Quero agendar uma avaliação.";
+  "Olá Patrícia tudo bem ? Quero saber mais.";
 
 const instagramUsuario = "patriciadasilva599";
 
