@@ -323,3 +323,7 @@ p{
   }
 
 }
+
+html {
+  scroll-behavior: auto;
+}
