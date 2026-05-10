@@ -36,3 +36,30 @@ document.querySelectorAll("button[data-tipo]").forEach(btn => {
   });
 
 });
+
+// SALVAR POSIÇÃO DO SCROLL
+window.addEventListener("scroll", () => {
+
+  sessionStorage.setItem(
+    "scrollPosition",
+    window.scrollY
+  );
+
+});
+
+// RESTAURAR POSIÇÃO
+window.addEventListener("load", () => {
+
+  const scrollPosition =
+    sessionStorage.getItem("scrollPosition");
+
+  if (scrollPosition !== null) {
+
+    window.scrollTo({
+      top: parseInt(scrollPosition),
+      behavior: "instant"
+    });
+
+  }
+
+});
