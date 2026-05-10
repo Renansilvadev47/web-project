@@ -198,6 +198,19 @@ p{
 
 }
 
+/* BOTÃO INSTAGRAM */
+.instagram-btn{
+
+  background:linear-gradient(
+    135deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+
+}
+
 /* =========================
    ALERTA
 ========================= */
