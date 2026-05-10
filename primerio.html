@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Primeiros Sinais</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f4eb;
+    font-family:'Poppins', sans-serif;
+    padding:40px 20px;
+    color:#222;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+  display:inline-block;
+  text-decoration:none;
+  background:#efe4fb;
+  color:#7d43ba;
+  padding:14px 25px;
+  border-radius:40px;
+  font-weight:700;
+  margin-bottom:30px;
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.btn-voltar:hover{
+  background:#7d43ba;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+
+/* TOPO */
+
+.topo{
+    text-align:center;
+    position:relative;
+    margin-bottom:40px;
+}
+
+.cerebro{
+    width:180px;
+    position:absolute;
+    left:0;
+    top:-20px;
+}
+
+.titulo{
+    font-size:65px;
+    font-weight:800;
+    color:#11153f;
+    line-height:1;
+}
+
+.subtitulo{
+    font-family:'Baloo 2', cursive;
+    font-size:70px;
+    color:#8b4dc4;
+    margin-top:-10px;
+    line-height:1;
+}
+
+.coracao{
+    color:#ff5f9f;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:30px;
+}
+
+/* CARDS */
+
+.card{
+    border-radius:35px;
+    padding:30px;
+    display:flex;
+    gap:20px;
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icone{
+    min-width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.conteudo h2{
+    font-size:42px;
+    margin-bottom:5px;
+    font-weight:800;
+}
+
+.conteudo h3{
+    font-size:22px;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.conteudo ul{
+    padding-left:20px;
+}
+
+.conteudo li{
+    margin-bottom:12px;
+    font-size:20px;
+    line-height:1.5;
+}
+
+/* CORES */
+
+.tdah{
+    background:#efe4fb;
+}
+
+.tdah h2,
+.tdah h3{
+    color:#7a3cb8;
+}
+
+.tea{
+    background:#e5f2fb;
+}
+
+.tea h2,
+.tea h3{
+    color:#156ab4;
+}
+
+.di{
+    background:#e6f7ee;
+}
+
+.di h2,
+.di h3{
+    color:#1b8d63;
+}
+
+.tod{
+    background:#fff1dd;
+}
+
+.tod h2,
+.tod h3{
+    color:#eb7a18;
+}
+
+/* DESLEXIA */
+
+.deslexia{
+    margin-top:25px;
+    background:#ffe8f0;
+    border-radius:35px;
+    padding:30px;
+    display:flex;
+    gap:20px;
+}
+
+.deslexia h2,
+.deslexia h3{
+    color:#e04b85;
+}
+
+/* FRASE FINAL */
+
+.frase-final{
+    margin-top:35px;
+    background:#fff2f7;
+    border-radius:50px;
+    padding:20px;
+    text-align:center;
+    font-family:'Baloo 2', cursive;
+    font-size:42px;
+    color:#8b4dc4;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* DECORAÇÕES */
+
+.decoracao{
+    position:absolute;
+    opacity:0.15;
+    font-size:120px;
+    right:-20px;
+    bottom:-20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:980px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.titulo{
+    font-size:42px;
+}
+
+.subtitulo{
+    font-size:48px;
+}
+
+.cerebro{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.card,
+.deslexia{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.conteudo ul{
+    text-align:left;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOPO -->
+
+    <section class="topo">
+
+        <img class="cerebro" src="imagens/cerebro.png">
+
+       <!-- BOTÃO VOLTAR -->
+
+<a href="index.html" class="btn-voltar">
+← Voltar para página principal
+</a>
+
+
+        <h1 class="titulo">
+            PRIMEIROS SINAIS DE
+        </h1>
+
+        <h2 class="subtitulo">
+            Tdah, Tea, Di, Tod e Deslexia
+            <span class="coracao">♡</span>
+        </h2>
+
+    </section>
+
+    <!-- GRID -->
+
+    <section class="grid">
+
+        <!-- TDAH -->
+
+        <div class="card tdah">
+
+            <div class="icone">
+                🧠
+            </div>
+
+            <div class="conteudo">
+
+                <h2>TDAH</h2>
+
+                <h3>
+                    TRANSTORNO DE DÉFICIT DE ATENÇÃO E HIPERATIVIDADE
+                </h3>
+
+                <ul>
+                    <li>Dificuldade para manter o foco.</li>
+                    <li>Agitação e inquietação frequente.</li>
+                    <li>Impulsividade nas ações.</li>
+                    <li>Esquecimento constante.</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">★</div>
+
+        </div>
+
+        <!-- TEA -->
+
+        <div class="card tea">
+
+            <div class="icone">
+                🧩
+            </div>
+
+            <div class="conteudo">
+
+                <h2>TEA</h2>
+
+                <h3>
+                    TRANSTORNO DO ESPECTRO AUTISTA
+                </h3>
+
+                <ul>
+                    <li>Dificuldade de interação social.</li>
+                    <li>Rotinas rígidas e repetitivas.</li>
+                    <li>Sensibilidade a sons e luzes.</li>
+                    <li>Interesses muito específicos.</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">♡</div>
+
+        </div>
+
+        <!-- DI -->
+
+        <div class="card di">
+
+            <div class="icone">
+                💡
+            </div>
+
+            <div class="conteudo">
+
+                <h2>DI</h2>
+
+                <h3>
+                    DEFICIÊNCIA INTELECTUAL
+                </h3>
+
+                <ul>
+                    <li>Atraso no desenvolvimento.</li>
+                    <li>Dificuldade em aprender.</li>
+                    <li>Necessidade maior de apoio.</li>
+                    <li>Dificuldade de compreensão.</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">✦</div>
+
+        </div>
+
+        <!-- TOD -->
+
+        <div class="card tod">
+
+            <div class="icone">
+                ⚡
+            </div>
+
+            <div class="conteudo">
+
+                <h2>TOD</h2>
+
+                <h3>
+                    TRANSTORNO OPOSITOR DESAFIADOR
+                </h3>
+
+                <ul>
+                    <li>Confronto frequente.</li>
+                    <li>Irritabilidade excessiva.</li>
+                    <li>Explosões emocionais.</li>
+                    <li>Dificuldade em aceitar limites.</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">☆</div>
+
+        </div>
+
+    </section>
+
+    <!-- DESLEXIA -->
+
+    <section class="deslexia">
+
+        <div class="icone">
+            📖
+        </div>
+
+        <div class="conteudo">
+
+            <h2>DESLEXIA</h2>
+
+            <h3>
+                TRANSTORNO ESPECÍFICO DA APRENDIZAGEM
+            </h3>
+
+            <ul>
+                <li>Dificuldade para reconhecer letras e palavras.</li>
+                <li>Trocas de letras ao escrever.</li>
+                <li>Leitura lenta e com erros.</li>
+                <li>Dificuldade para interpretar textos.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE -->
+
+    <div class="frase-final">
+        Observar, compreender e intervir cedo faz toda a diferença! ♡
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Formação Profissional</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f8f4ee;
+      font-family:'Poppins', sans-serif;
+      color:#222;
+      padding:40px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* BOTÃO VOLTAR */
+
+.btn-voltar{
+  display:inline-block;
+  text-decoration:none;
+  background:#efe4fb;
+  color:#7d43ba;
+  padding:14px 25px;
+  border-radius:40px;
+  font-weight:700;
+  margin-bottom:30px;
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.btn-voltar:hover{
+  background:#7d43ba;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+    /* TOPO */
+
+    .topo{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .topo h1{
+      font-size:48px;
+      color:#2c2350;
+      font-weight:700;
+      line-height:1.2;
+    }
+
+    .topo h2{
+      font-family:'Pacifico', cursive;
+      font-size:58px;
+      color:#7d3cb5;
+      margin-top:10px;
+      line-height:1.2;
+      font-weight:400;
+    }
+
+    .topo-box{
+      margin-top:30px;
+      background:#f6dfe3;
+      padding:30px;
+      border-radius:25px;
+      font-size:22px;
+      line-height:1.7;
+      font-weight:500;
+      color:#333;
+    }
+
+    /* CARDS */
+
+    .card{
+      display:flex;
+      align-items:flex-start;
+      gap:35px;
+      padding:35px;
+      border-radius:30px;
+      margin-bottom:30px;
+    }
+
+    .icone{
+      width:100px;
+      min-width:100px;
+      height:100px;
+      border-radius:25px;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:42px;
+    }
+
+    .card-conteudo{
+      flex:1;
+    }
+
+    .card-conteudo h3{
+      font-size:32px;
+      margin-bottom:18px;
+      line-height:1.2;
+      font-weight:700;
+    }
+
+    .card-conteudo p{
+      font-size:20px;
+      line-height:1.8;
+      color:#333;
+    }
+
+    /* CORES */
+
+    .pedagogia{
+      background:#eee3f3;
+    }
+
+    .pedagogia h3{
+      color:#7b45a3;
+    }
+
+    .especializacao{
+      background:#ddeef3;
+    }
+
+    .especializacao h3{
+      color:#0b5d95;
+    }
+
+    .inclusao{
+      background:#f7eedc;
+    }
+
+    .inclusao h3{
+      color:#e47d11;
+    }
+
+    .desenvolvimento{
+      background:#f6dfe3;
+    }
+
+    .desenvolvimento h3{
+      color:#cc2d70;
+    }
+
+    /* FRASE FINAL */
+
+    .frase-final{
+      margin-top:55px;
+      background:#fff1f1;
+      padding:30px;
+      border-radius:25px;
+      text-align:center;
+      font-family:'Pacifico', cursive;
+      font-size:42px;
+      color:#7d3cb5;
+      line-height:1.4;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width:768px){
+
+      body{
+        padding:25px 15px;
+      }
+
+      .topo h1{
+        font-size:34px;
+      }
+
+      .topo h2{
+        font-size:40px;
+      }
+
+      .topo-box{
+        font-size:18px;
+        padding:22px;
+      }
+
+      .card{
+        flex-direction:column;
+        text-align:center;
+        padding:28px;
+      }
+
+      .icone{
+        margin:auto;
+      }
+
+      .card-conteudo h3{
+        font-size:26px;
+      }
+
+      .card-conteudo p{
+        font-size:18px;
+      }
+
+      .frase-final{
+        font-size:30px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  
+    <!-- TOPO -->
+    <section class="topo">
+
+      <!-- BOTÃO -->
+    <a href="index.html" class="btn-voltar">
+      ← Voltar para página principal
+    </a>
+
+      <h1>FORMAÇÃO ACADÊMICA E</h1>
+
+      <h2>especializações profissionais</h2>
+
+      <div class="topo-box">
+        Formação voltada ao desenvolvimento infantil,
+        aprendizagem, inclusão e estratégias especializadas
+        para potencializar o desenvolvimento global da criança.
+      </div>
+
+    </section>
+
+    <!-- PEDAGOGIA -->
+
+    <section class="card pedagogia">
+
+      <div class="icone">
+        🎓
+      </div>
+
+      <div class="card-conteudo">
+
+        <h3>FORMAÇÃO EM PEDAGOGIA</h3>
+
+        <p>
+          Graduada em Pedagogia (Licenciatura),
+          com sólida base educacional voltada
+          ao desenvolvimento infantil,
+          aprendizagem e práticas pedagógicas inclusivas.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ESPECIALIZAÇÕES -->
+
+    <section class="card especializacao">
+
+      <div class="icone">
+        🧠
+      </div>
+
+      <div class="card-conteudo">
+
+        <h3>NEUROPSICOPEDAGOGIA E PSICOPEDAGOGIA</h3>
+
+        <p>
+          Pós-Graduada em Neuropsicopedagogia,
+          Psicopedagogia Clínica e Institucional,
+          com atuação baseada em estratégias individualizadas
+          e abordagens fundamentadas em evidências.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- INCLUSÃO -->
+
+    <section class="card inclusao">
+
+      <div class="icone">
+        🌟
+      </div>
+
+      <div class="card-conteudo">
+
+        <h3>EDUCAÇÃO ESPECIAL E INCLUSÃO</h3>
+
+        <p>
+          Especializações em Educação Especial Inclusiva,
+          Atendimento Educacional Especializado (AEE),
+          Psicomotricidade Clínica e Institucional,
+          Estimulação Precoce e desenvolvimento infantil.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- DESENVOLVIMENTO -->
+
+    <section class="card desenvolvimento">
+
+      <div class="icone">
+        ❤️
+      </div>
+
+      <div class="card-conteudo">
+
+        <h3>ATUAÇÃO HUMANIZADA E PERSONALIZADA</h3>
+
+        <p>
+          Trabalho focado no desenvolvimento global da criança,
+          promovendo avanços na aprendizagem,
+          autonomia, comportamento e habilidades emocionais,
+          sempre respeitando as individualidades de cada paciente.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- FRASE FINAL -->
+
+    <div class="frase-final">
+      Educar é compreender cada criança de forma única!
+    </div>
+
+  </div>
+
+</body>
+
+</html>

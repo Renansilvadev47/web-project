@@ -1,0 +1,325 @@
+/* =========================
+   RESET
+========================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+  font-family:'Inter', sans-serif;
+  background:#430852;
+  color:#430852;
+  line-height:1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+  background:linear-gradient(135deg,#9321c0,#7b1fa2);
+  color:white;
+  padding:70px 20px;
+  text-align:center;
+  overflow:hidden;
+}
+
+/* IMAGEM TOPO */
+.header-imagem{
+  display:flex;
+  justify-content:center;
+  margin-bottom:25px;
+}
+
+.header-imagem img{
+  width:180px;
+  animation:flutuar 3s ease-in-out infinite;
+}
+
+/* ANIMAÇÃO */
+@keyframes flutuar{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+/* TEXTO HEADER */
+.header-text{
+  text-align:center;
+  max-width:850px;
+  margin:auto;
+}
+
+.header-text h2{
+  font-size:32px;
+  font-weight:700;
+  line-height:1.4;
+  color:#fff;
+}
+
+/* =========================
+   SECTION
+========================= */
+section{
+  background:#dd8dad;
+  border-radius:20px;
+  margin:40px auto;
+  max-width:1100px;
+  padding:50px 35px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.06);
+  text-align:center;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1{
+  font-size:36px;
+  font-weight:800;
+  margin-bottom:25px;
+  color:#fff;
+}
+
+h2{
+  font-size:32px;
+  font-weight:700;
+}
+
+/* =========================
+   TEXTO
+========================= */
+p{
+  font-size:17px;
+  color:#374151;
+}
+
+/* =========================
+   NOME PROFISSIONAL
+========================= */
+.nome-profissional{
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.nome-profissional h2{
+  color:rgb(114, 18, 98);
+  font-size:32px;
+}
+
+.nome-profissional p{
+  color:#fff;
+  margin-top:8px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#9321c0,#4ade80);
+  color:white;
+  padding:16px 28px;
+  text-decoration:none;
+  border-radius:14px;
+  font-weight:700;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(34,197,94,0.3);
+  margin:10px;
+}
+
+.btn:hover{
+  transform:translateY(-5px);
+}
+
+.btn i{
+  margin-right:8px;
+}
+
+/* =========================
+   ALERTA
+========================= */
+.alerta{
+  background:linear-gradient(135deg,#dd8dad,#dd8dad);
+}
+
+/* =========================
+   CARDS
+========================= */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:25px;
+  margin-top:40px;
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.card{
+  background:rgb(238, 234, 234);
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(139,92,246,0.15);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card h3{
+  margin-bottom:20px;
+  font-size:22px;
+  color:#4c1d95;
+}
+
+/* =========================
+   FOTO PRINCIPAL
+========================= */
+.imagem .img-box{
+  max-width:420px;
+  margin:0 auto;
+}
+
+.imagem .img-box img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  border-radius:15px;
+  display:block;
+}
+
+/* =========================
+   IMAGENS LADO A LADO
+========================= */
+.imagens-lado{
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:35px;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.imagens-lado .img-box{
+  position:relative;
+  flex:1 1 320px;
+  max-width:420px;
+  overflow:hidden;
+  background:rgba(255,255,255,0.95);
+  border-radius:28px;
+  padding:12px;
+  border:1px solid rgba(255,255,255,0.4);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.10),
+    0 5px 15px rgba(147,33,192,0.15);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.imagens-lado .img-box:hover{
+  transform:translateY(-10px) scale(1.02);
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.18),
+    0 10px 25px rgba(147,33,192,0.25);
+}
+
+.imagens-lado .img-box img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  border-radius:22px;
+  display:block;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.imagens-lado .img-box:hover img{
+  transform:scale(1.04);
+  filter:brightness(1.03);
+}
+
+/* =========================
+   CTA
+========================= */
+.cta{
+  background:linear-gradient(135deg,#7b1fa2,#430852);
+  color:white;
+}
+
+/* BOTÕES ESPECÍFICOS */
+.formacao{
+  background:linear-gradient(135deg,#6d28d9,#4c1d95);
+}
+
+.agendar{
+  background:linear-gradient(135deg,#430852,#7b1fa2);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media(max-width:768px){
+
+  header{
+    padding:80px 20px;
+  }
+
+  .header-text h2{
+    font-size:28px;
+  }
+
+  h1{
+    font-size:28px;
+  }
+
+  section{
+    padding:45px 24px;
+    border-radius:28px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .imagem .img-box img,
+  .imagens-lado .img-box img{
+    height:420px;
+  }
+
+  .btn{
+    width:100%;
+    max-width:320px;
+  }
+
+}

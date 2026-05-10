@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plano Personalizado Psicopedagógico</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f4eb;
+    font-family:'Poppins', sans-serif;
+    color:#222;
+    padding:40px 20px;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1250px;
+    margin:auto;
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+  display:inline-block;
+  text-decoration:none;
+  background:#efe4fb;
+  color:#7d43ba;
+  padding:14px 25px;
+  border-radius:40px;
+  font-weight:700;
+  margin-bottom:30px;
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.btn-voltar:hover{
+  background:#7d43ba;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+/* TOPO */
+
+.topo{
+    text-align:center;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.topo img{
+    width:180px;
+    position:absolute;
+    left:0;
+    top:-10px;
+}
+
+.titulo{
+    font-size:58px;
+    color:#13194b;
+    font-weight:800;
+    line-height:1.1;
+}
+
+.subtitulo{
+    font-family:'Baloo 2', cursive;
+    font-size:65px;
+    color:#8a4ec2;
+    margin-top:10px;
+}
+
+.descricao-topo{
+    margin:30px auto 0;
+    max-width:950px;
+    background:#ffe7ef;
+    padding:25px;
+    border-radius:30px;
+    font-size:22px;
+    line-height:1.7;
+    font-weight:500;
+    color:#333;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:40px;
+}
+
+/* CARDS */
+
+.card{
+    border-radius:35px;
+    padding:35px;
+    display:flex;
+    gap:25px;
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icone{
+    min-width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.conteudo h2{
+    font-size:36px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.conteudo p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.conteudo ul{
+    padding-left:22px;
+}
+
+.conteudo li{
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:10px;
+}
+
+/* CORES */
+
+.card1{
+    background:#efe3fb;
+}
+
+.card1 h2{
+    color:#7c43b6;
+}
+
+.card2{
+    background:#e3f2fc;
+}
+
+.card2 h2{
+    color:#1668b1;
+}
+
+.card3{
+    background:#e8f8ee;
+}
+
+.card3 h2{
+    color:#1b8f66;
+}
+
+.card4{
+    background:#fff0dc;
+}
+
+.card4 h2{
+    color:#e67a19;
+}
+
+.card5{
+    background:#ffe8f1;
+    margin-top:30px;
+}
+
+.card5 h2{
+    color:#e14987;
+}
+
+/* DECORAÇÕES */
+
+.decoracao{
+    position:absolute;
+    font-size:120px;
+    right:-15px;
+    bottom:-20px;
+    opacity:0.08;
+}
+
+/* RODAPÉ */
+
+.frase-final{
+    margin-top:40px;
+    background:#fff2f8;
+    border-radius:50px;
+    text-align:center;
+    padding:22px;
+    font-family:'Baloo 2', cursive;
+    font-size:40px;
+    color:#8b4dc4;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:980px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.topo img{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.titulo{
+    font-size:42px;
+}
+
+.subtitulo{
+    font-size:46px;
+}
+
+.card{
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+}
+
+.conteudo ul{
+    text-align:left;
+}
+
+.descricao-topo{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOPO -->
+
+    <section class="topo">
+
+        <img src="imagens/cerebro.png" alt="Cérebro">
+
+        <!-- BOTÃO VOLTAR -->
+
+<a href="index.html" class="btn-voltar">
+← Voltar para página principal
+</a>
+
+        <h1 class="titulo">
+            COMO FUNCIONA UM
+        </h1>
+
+        <h2 class="subtitulo">
+            Plano Psicopedagógico Personalizado ♡
+        </h2>
+
+        <div class="descricao-topo">
+            Cada criança possui características únicas, dificuldades específicas
+            e habilidades próprias. Por isso, o profissional psicopedagógico realiza
+            uma avaliação completa para construir um plano individualizado,
+            focado no desenvolvimento emocional, cognitivo, social e educacional.
+        </div>
+
+    </section>
+
+    <!-- GRID -->
+
+    <section class="grid">
+
+        <!-- ETAPA 1 -->
+
+        <div class="card card1">
+
+            <div class="icone">
+                🧠
+            </div>
+
+            <div class="conteudo">
+
+                <h2>1. Avaliação Inicial</h2>
+
+                <p>
+                    O profissional inicia observando comportamentos,
+                    dificuldades de aprendizagem, interação social,
+                    desenvolvimento emocional e desempenho escolar.
+                </p>
+
+                <ul>
+                    <li>Entrevista com os pais</li>
+                    <li>Histórico escolar e familiar</li>
+                    <li>Observação comportamental</li>
+                    <li>Identificação de sinais importantes</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">★</div>
+
+        </div>
+
+        <!-- ETAPA 2 -->
+
+        <div class="card card2">
+
+            <div class="icone">
+                📋
+            </div>
+
+            <div class="conteudo">
+
+                <h2>2. Diagnóstico Funcional</h2>
+
+                <p>
+                    Após a análise inicial, o especialista identifica quais áreas
+                    precisam de maior atenção para desenvolver estratégias específicas.
+                </p>
+
+                <ul>
+                    <li>Dificuldade de atenção</li>
+                    <li>Problemas de leitura e escrita</li>
+                    <li>Questões emocionais</li>
+                    <li>Desenvolvimento social</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">♡</div>
+
+        </div>
+
+        <!-- ETAPA 3 -->
+
+        <div class="card card3">
+
+            <div class="icone">
+                💡
+            </div>
+
+            <div class="conteudo">
+
+                <h2>3. Plano Personalizado</h2>
+
+                <p>
+                    Cada atendimento é criado de forma individual,
+                    respeitando as necessidades, o ritmo e as habilidades da criança.
+                </p>
+
+                <ul>
+                    <li>Metas específicas</li>
+                    <li>Estratégias pedagógicas</li>
+                    <li>Atividades adaptadas</li>
+                    <li>Estimulação cognitiva e emocional</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">✦</div>
+
+        </div>
+
+        <!-- ETAPA 4 -->
+
+        <div class="card card4">
+
+            <div class="icone">
+                🌟
+            </div>
+
+            <div class="conteudo">
+
+                <h2>4. Acompanhamento Contínuo</h2>
+
+                <p>
+                    O desenvolvimento é acompanhado constantemente
+                    para ajustar o plano conforme os avanços da criança.
+                </p>
+
+                <ul>
+                    <li>Monitoramento de evolução</li>
+                    <li>Adaptação das estratégias</li>
+                    <li>Relatórios de progresso</li>
+                    <li>Orientação familiar e escolar</li>
+                </ul>
+
+            </div>
+
+            <div class="decoracao">☆</div>
+
+        </div>
+
+    </section>
+
+    <!-- RESULTADOS -->
+
+    <section class="card card5">
+
+        <div class="icone">
+            ❤️
+        </div>
+
+        <div class="conteudo">
+
+            <h2>Resultados Esperados</h2>
+
+            <p>
+                O objetivo principal é proporcionar mais autonomia,
+                segurança emocional e desenvolvimento da aprendizagem,
+                respeitando sempre o tempo e as particularidades de cada paciente.
+            </p>
+
+            <ul>
+                <li>Melhora da atenção e concentração</li>
+                <li>Maior desenvolvimento emocional</li>
+                <li>Avanços escolares e sociais</li>
+                <li>Fortalecimento da autoestima</li>
+                <li>Mais qualidade de vida para a família</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE FINAL -->
+
+    <div class="frase-final">
+        Cada criança aprende de uma forma única. ♡
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Neurodesenvolvimento</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f8f4ee;
+      font-family:'Poppins', sans-serif;
+      color:#222;
+      padding:40px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* BOTÃO VOLTAR */
+
+.btn-voltar{
+  display:inline-block;
+  text-decoration:none;
+  background:#efe4fb;
+  color:#7d43ba;
+  padding:14px 25px;
+  border-radius:40px;
+  font-weight:700;
+  margin-bottom:30px;
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.btn-voltar:hover{
+  background:#7d43ba;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+
+    /* TOPO */
+
+    .topo{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .topo h1{
+      font-size:48px;
+      color:#2c2350;
+      font-weight:700;
+      line-height:1.2;
+    }
+
+    .topo h2{
+      font-family:'Pacifico', cursive;
+      font-size:58px;
+      color:#7d3cb5;
+      margin-top:10px;
+      line-height:1.2;
+      font-weight:400;
+    }
+
+    .topo-box{
+      margin-top:30px;
+      background:#f6dfe3;
+      padding:30px;
+      border-radius:25px;
+      font-size:22px;
+      line-height:1.6;
+      font-weight:500;
+    }
+
+    /* CARDS */
+
+    .card{
+      display:flex;
+      align-items:center;
+      gap:35px;
+      padding:35px;
+      border-radius:30px;
+      margin-bottom:30px;
+    }
+
+    .card img{
+      width:150px;
+      min-width:150px;
+    }
+
+    .card-conteudo{
+      flex:1;
+    }
+
+    .card-conteudo h3{
+      font-size:34px;
+      margin-bottom:18px;
+      line-height:1.2;
+      font-weight:700;
+    }
+
+    .card-conteudo p{
+      font-size:21px;
+      line-height:1.8;
+      color:#333;
+    }
+
+    /* CORES */
+
+    .di{
+      background:#eee3f3;
+    }
+
+    .di h3{
+      color:#7b45a3;
+    }
+
+    .tea{
+      background:#ddeef3;
+    }
+
+    .tea h3{
+      color:#0b5d95;
+    }
+
+    .tdah{
+      background:#f7eedc;
+    }
+
+    .tdah h3{
+      color:#e47d11;
+    }
+
+    /* BLOCOS FINAIS */
+
+    .blocos{
+      margin-top:50px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:25px;
+    }
+
+    .bloco{
+      background:#fff;
+      border-radius:25px;
+      padding:30px;
+      text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .bloco h4{
+      font-size:26px;
+      margin-bottom:18px;
+      line-height:1.3;
+      font-weight:700;
+    }
+
+    .bloco p{
+      font-size:19px;
+      line-height:1.7;
+      color:#444;
+    }
+
+    .verde h4{
+      color:#1f8b5c;
+    }
+
+    .rosa h4{
+      color:#cc2d70;
+    }
+
+    .roxo h4{
+      color:#8b5cc9;
+    }
+
+    /* FRASE FINAL */
+
+    .frase-final{
+      margin-top:55px;
+      background:#fff1f1;
+      padding:30px;
+      border-radius:25px;
+      text-align:center;
+      font-family:'Pacifico', cursive;
+      font-size:42px;
+      color:#7d3cb5;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width:768px){
+
+      body{
+        padding:25px 15px;
+      }
+
+      .topo h1{
+        font-size:34px;
+      }
+
+      .topo h2{
+        font-size:40px;
+      }
+
+      .topo-box{
+        font-size:18px;
+        padding:22px;
+      }
+
+      .card{
+        flex-direction:column;
+        text-align:center;
+        padding:28px;
+      }
+
+      .card img{
+        width:110px;
+        min-width:110px;
+      }
+
+      .card-conteudo h3{
+        font-size:26px;
+      }
+
+      .card-conteudo p{
+        font-size:18px;
+      }
+
+      .bloco h4{
+        font-size:22px;
+      }
+
+      .bloco p{
+        font-size:17px;
+      }
+
+      .frase-final{
+        font-size:30px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    
+
+    <!-- TOPO -->
+    <section class="topo">
+
+      <!-- BOTÃO -->
+    <a href="index.html" class="btn-voltar">
+      ← Voltar para página principal
+    </a>
+
+      <h1>ENTENDENDO UM POUCO SOBRE</h1>
+
+      <h2>alguns transtornos do neurodesenvolvimento</h2>
+
+      <div class="topo-box">
+        Cada pessoa aprende, sente e se desenvolve de forma única.
+        Conhecer alguns transtornos é um passo importante para promover inclusão,
+        respeito e intervenções adequadas.
+      </div>
+
+    </section>
+
+    <!-- DI -->
+    <section class="card di">
+
+      <img src="imagens/di.png" alt="Deficiência Intelectual">
+
+      <div class="card-conteudo">
+
+        <h3>DEFICIÊNCIA INTELECTUAL (DI)</h3>
+
+        <p>
+          Caracteriza-se por limitações no funcionamento intelectual e nas habilidades adaptativas,
+          como comunicação, socialização e autonomia. O desenvolvimento pode ocorrer de forma mais lenta,
+          porém com apoio adequado, estímulos corretos e intervenções especializadas,
+          a pessoa pode evoluir significativamente.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- TEA -->
+    <section class="card tea">
+
+      <img src="imagens/tea.png" alt="TEA">
+
+      <div class="card-conteudo">
+
+        <h3>TRANSTORNO DO ESPECTRO AUTISTA (TEA)</h3>
+
+        <p>
+          O TEA envolve dificuldades na comunicação social e padrões de comportamento repetitivos
+          ou restritos. Cada indivíduo dentro do espectro possui características únicas.
+          Estratégias individualizadas, previsibilidade e acolhimento são fundamentais
+          para o desenvolvimento e inclusão.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- TDAH -->
+    <section class="card tdah">
+
+      <img src="imagens/tdah.png" alt="TDAH">
+
+      <div class="card-conteudo">
+
+        <h3>TRANSTORNO DE DÉFICIT DE ATENÇÃO E HIPERATIVIDADE (TDAH)</h3>
+
+        <p>
+          Caracteriza-se por desatenção, impulsividade e/ou hiperatividade.
+          A criança ou adolescente pode apresentar dificuldades para manter o foco,
+          organizar tarefas e controlar impulsos. Com acompanhamento especializado,
+          é possível desenvolver estratégias eficazes para melhorar o desempenho e a autonomia.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- BLOCOS -->
+    <section class="blocos">
+
+      <div class="bloco verde">
+
+        <h4>POR QUE FALAR SOBRE ISSO?</h4>
+
+        <p>
+          Porque informação gera empatia, reduz preconceitos
+          e fortalece práticas inclusivas em todos os ambientes.
+        </p>
+
+      </div>
+
+      <div class="bloco rosa">
+
+        <h4>NA PSICOPEDAGOGIA, O OLHAR É INDIVIDUALIZADO</h4>
+
+        <p>
+          Cada paciente é único, com suas próprias potencialidades,
+          necessidades e desafios no processo de aprendizagem.
+        </p>
+
+      </div>
+
+      <div class="bloco roxo">
+
+        <h4>DESENVOLVIMENTO COM RESPEITO</h4>
+
+        <p>
+          O trabalho é focado em desenvolver habilidades,
+          respeitando o tempo, as emoções e as necessidades individuais.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- FRASE FINAL -->
+
+    <div class="frase-final">
+      Incluir é compreender, respeitar e adaptar!
+    </div>
+
+  </div>
+
+</body>
+</html>

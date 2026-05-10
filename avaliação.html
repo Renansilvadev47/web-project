@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Avaliação Psicopedagógica</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f8f4eb;
+    font-family:'Poppins', sans-serif;
+    padding:40px 20px;
+    color:#2b2b2b;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1300px;
+    margin:auto;
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+  display:inline-block;
+  text-decoration:none;
+  background:#efe4fb;
+  color:#7d43ba;
+  padding:14px 25px;
+  border-radius:40px;
+  font-weight:700;
+  margin-bottom:30px;
+  transition:0.3s;
+  border:2px solid transparent;
+}
+
+.btn-voltar:hover{
+  background:#7d43ba;
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+/* TOPO */
+
+.topo{
+    text-align:center;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.cerebro{
+    width:180px;
+    position:absolute;
+    left:0;
+    top:-10px;
+}
+
+.titulo{
+    font-size:65px;
+    font-weight:800;
+    color:#11153f;
+    line-height:1;
+}
+
+.subtitulo{
+    font-family:'Baloo 2', cursive;
+    font-size:68px;
+    color:#8d49c7;
+    line-height:1;
+    margin-top:-5px;
+}
+
+.descricao-topo{
+    max-width:1000px;
+    margin:30px auto 0;
+    background:#ffeef4;
+    padding:25px;
+    border-radius:30px;
+    font-size:22px;
+    line-height:1.7;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+/* CARDS */
+
+.card{
+    border-radius:35px;
+    padding:35px;
+    display:flex;
+    gap:25px;
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icone{
+    min-width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.conteudo h2{
+    font-size:40px;
+    margin-bottom:10px;
+    font-weight:800;
+}
+
+.conteudo p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* CORES */
+
+.etapa1{
+    background:#efe4fb;
+}
+
+.etapa1 h2{
+    color:#7d42be;
+}
+
+.etapa2{
+    background:#e5f2fb;
+}
+
+.etapa2 h2{
+    color:#1b6cb4;
+}
+
+.etapa3{
+    background:#e8f7ef;
+}
+
+.etapa3 h2{
+    color:#1e9667;
+}
+
+.etapa4{
+    background:#fff1df;
+}
+
+.etapa4 h2{
+    color:#e9821f;
+}
+
+/* CARD GRANDE */
+
+.card-grande{
+    margin-top:30px;
+    background:#ffe8f0;
+    border-radius:35px;
+    padding:40px;
+    display:flex;
+    gap:30px;
+}
+
+.card-grande h2{
+    color:#d94c82;
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+/* FRASE */
+
+.frase{
+    margin-top:40px;
+    background:#fff5fb;
+    border-radius:50px;
+    padding:25px;
+    text-align:center;
+    font-family:'Baloo 2', cursive;
+    font-size:42px;
+    color:#8c4ec5;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* DECORAÇÕES */
+
+.decoracao{
+    position:absolute;
+    right:-15px;
+    bottom:-15px;
+    opacity:0.10;
+    font-size:120px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:980px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.titulo{
+    font-size:42px;
+}
+
+.subtitulo{
+    font-size:50px;
+}
+
+.cerebro{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.card,
+.card-grande{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.conteudo p{
+    text-align:left;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOPO -->
+
+    <section class="topo">
+
+        <img src="imagens/cerebro.png" class="cerebro">
+
+
+        <!-- BOTÃO VOLTAR -->
+
+<a href="index.html" class="btn-voltar">
+← Voltar para página principal
+</a>
+
+
+        <h1 class="titulo">
+            COMO FUNCIONA
+        </h1>
+
+        <h2 class="subtitulo">
+            A Avaliação Psicopedagógica ♡
+        </h2>
+
+        <div class="descricao-topo">
+
+            A avaliação psicopedagógica é um processo detalhado e individualizado que busca compreender as dificuldades de aprendizagem, comportamento, desenvolvimento e adaptação da criança ou adolescente. O objetivo não é apenas identificar sintomas, mas entender como o paciente aprende, se comunica, organiza pensamentos, reage emocionalmente e interage socialmente.
+
+        </div>
+
+    </section>
+
+    <!-- GRID -->
+
+    <section class="grid">
+
+        <!-- ETAPA 1 -->
+
+        <div class="card etapa1">
+
+            <div class="icone">
+                👩‍👩‍👦
+            </div>
+
+            <div class="conteudo">
+
+                <h2>Anamnese Familiar</h2>
+
+                <p>
+
+                    O processo inicia com uma conversa detalhada com os responsáveis. O profissional investiga histórico gestacional, desenvolvimento da fala, comportamento, rotina escolar, dificuldades observadas, emoções, socialização e histórico familiar.
+
+                </p>
+
+            </div>
+
+            <div class="decoracao">♡</div>
+
+        </div>
+
+        <!-- ETAPA 2 -->
+
+        <div class="card etapa2">
+
+            <div class="icone">
+                🧩
+            </div>
+
+            <div class="conteudo">
+
+                <h2>Observação Clínica</h2>
+
+                <p>
+
+                    Durante os atendimentos, o psicopedagogo observa atenção, impulsividade, linguagem, coordenação, interação social, compreensão de comandos, memória, comportamento emocional e padrões que possam indicar sinais de TDAH, TEA, DI, TOD ou Deslexia.
+
+                </p>
+
+            </div>
+
+            <div class="decoracao">★</div>
+
+        </div>
+
+        <!-- ETAPA 3 -->
+
+        <div class="card etapa3">
+
+            <div class="icone">
+                📚
+            </div>
+
+            <div class="conteudo">
+
+                <h2>Aplicação de Testes</h2>
+
+                <p>
+
+                    São utilizados instrumentos pedagógicos, cognitivos e neuropsicopedagógicos para avaliar leitura, escrita, interpretação, raciocínio lógico, memória, atenção, consciência fonológica e habilidades acadêmicas.
+
+                </p>
+
+            </div>
+
+            <div class="decoracao">✦</div>
+
+        </div>
+
+        <!-- ETAPA 4 -->
+
+        <div class="card etapa4">
+
+            <div class="icone">
+                🧠
+            </div>
+
+            <div class="conteudo">
+
+                <h2>Análise Comportamental</h2>
+
+                <p>
+
+                    O profissional analisa como o paciente reage a frustrações, regras, mudanças de rotina, estímulos sensoriais e demandas cognitivas. Essa etapa ajuda a compreender dificuldades emocionais e comportamentais.
+
+                </p>
+
+            </div>
+
+            <div class="decoracao">☆</div>
+
+        </div>
+
+    </section>
+
+    <!-- CARD GRANDE -->
+
+    <section class="card-grande">
+
+        <div class="icone">
+            ✨
+        </div>
+
+        <div class="conteudo">
+
+            <h2>Conclusão e Devolutiva</h2>
+
+            <p>
+
+                Após todas as etapas, o profissional organiza os resultados da avaliação e realiza uma devolutiva completa para a família. Nesse momento são explicadas as dificuldades observadas, potencialidades da criança, hipóteses diagnósticas, orientações escolares e possíveis encaminhamentos para outros profissionais, como neurologista, psicólogo, fonoaudiólogo ou terapeuta ocupacional.
+
+                <br><br>
+
+                O foco principal da avaliação psicopedagógica é promover desenvolvimento, autonomia, inclusão e qualidade de vida, respeitando sempre a individualidade de cada paciente.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FRASE -->
+
+    <div class="frase">
+
+        Cada criança aprende de forma única. Avaliar cedo é acolher, compreender e transformar. ♡
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
