@@ -139,7 +139,7 @@ p{
 .form-agendamento input[type="text"],
 .form-agendamento input[type="tel"],
 .form-agendamento input[type="email"],
-.form-agendamento input[type="time"]{
+.form-agendamento input[type="date"]{
   width:100%;
   padding:20px;
   border:none;
@@ -281,7 +281,7 @@ label{
 
 <!-- IMAGEM -->
 <div class="header-imagem">
-<img src="imagens/cerebro.png" alt="Logo Psicopedagoga">
+  <img src="imagens/cerebro.png" alt="Logo Psicopedagoga">
 </div>
 
 <section>
@@ -307,7 +307,8 @@ Preencha os dados abaixo e nossa equipe entrará em contato rapidamente:
 
 <input type="email" id="email" placeholder="E-mail (opcional)">
 
-<input type="time" id="horario" required>
+<!-- NOVO CAMPO DATA -->
+<input type="date" id="dataConsulta" required>
 
 <label>
 TIPO DE AVALIAÇÃO:
@@ -375,7 +376,8 @@ Solicitar Agendamento
 
 <script>
 
-const formulario = document.getElementById("formAgendamento");
+const formulario =
+document.getElementById("formAgendamento");
 
 formulario.addEventListener("submit", function(e){
 
@@ -390,8 +392,8 @@ formulario.addEventListener("submit", function(e){
   const email =
   document.getElementById("email").value;
 
-  const horario =
-  document.getElementById("horario").value;
+  const dataConsulta =
+  document.getElementById("dataConsulta").value;
 
   const tipo =
   document.querySelector(
@@ -406,7 +408,7 @@ Telefone: ${telefone}
 
 Email: ${email}
 
-Horário desejado: ${horario}
+Data da consulta: ${dataConsulta}
 
 Tipo de avaliação: ${tipo}`;
 
@@ -427,9 +429,3 @@ Tipo de avaliação: ${tipo}`;
 
 </body>
 </html>
-
-
-
-
-
-
