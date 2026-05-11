@@ -17,7 +17,6 @@
 <style>
 
 /* RESET */
-
 *{
   margin:0;
   padding:0;
@@ -25,7 +24,6 @@
 }
 
 /* BODY */
-
 body{
   background:#670a7e;
   font-family:'Poppins', sans-serif;
@@ -34,7 +32,6 @@ body{
 }
 
 /* IMAGEM TOPO */
-
 .header-imagem{
   display:flex;
   justify-content:center;
@@ -61,7 +58,6 @@ body{
 }
 
 /* SECTION */
-
 section{
   max-width:950px;
   margin:auto;
@@ -74,7 +70,6 @@ section{
 }
 
 /* DECORAÇÕES */
-
 section::before{
   content:"♡";
   position:absolute;
@@ -96,7 +91,6 @@ section::after{
 }
 
 /* BOTÃO VOLTAR */
-
 .btn-voltar{
   display:inline-block;
   text-decoration:none;
@@ -117,7 +111,6 @@ section::after{
 }
 
 /* TITULOS */
-
 h2{
   font-size:55px;
   text-align:center;
@@ -136,7 +129,6 @@ p{
 }
 
 /* FORM */
-
 .form-agendamento{
   display:flex;
   flex-direction:column;
@@ -144,10 +136,10 @@ p{
 }
 
 /* INPUTS */
-
 .form-agendamento input[type="text"],
 .form-agendamento input[type="tel"],
-.form-agendamento input[type="email"]{
+.form-agendamento input[type="email"],
+.form-agendamento input[type="time"]{
   width:100%;
   padding:20px;
   border:none;
@@ -165,7 +157,6 @@ p{
 }
 
 /* LABEL */
-
 label{
   font-size:22px;
   font-weight:800;
@@ -174,7 +165,6 @@ label{
 }
 
 /* CARDS */
-
 .opcoes-avaliacao{
   display:grid;
   grid-template-columns:1fr;
@@ -206,7 +196,6 @@ label{
 }
 
 /* RADIO */
-
 .card-opcao input{
   position:absolute;
   top:25px;
@@ -216,7 +205,6 @@ label{
 }
 
 /* CONTEÚDO */
-
 .conteudo strong{
   display:block;
   font-size:28px;
@@ -232,7 +220,6 @@ label{
 }
 
 /* BOTÃO */
-
 .btn{
   margin-top:20px;
   width:100%;
@@ -254,7 +241,6 @@ label{
 }
 
 /* RESPONSIVO */
-
 @media(max-width:768px){
 
   section{
@@ -294,17 +280,13 @@ label{
 <body>
 
 <!-- IMAGEM -->
-
 <div class="header-imagem">
-
 <img src="imagens/cerebro.png" alt="Logo Psicopedagoga">
-
 </div>
 
 <section>
 
 <!-- BOTÃO VOLTAR -->
-
 <a href="index.html" class="btn-voltar">
 ← Voltar para página principal
 </a>
@@ -319,25 +301,13 @@ Preencha os dados abaixo e nossa equipe entrará em contato rapidamente:
 
 <form class="form-agendamento" id="formAgendamento">
 
-<input
-type="text"
-id="nome"
-placeholder="Nome completo"
-required
->
+<input type="text" id="nome" placeholder="Nome completo" required>
 
-<input
-type="tel"
-id="telefone"
-placeholder="Telefone (WhatsApp)"
-required
->
+<input type="tel" id="telefone" placeholder="Telefone (WhatsApp)" required>
 
-<input
-type="email"
-id="email"
-placeholder="E-mail (opcional)"
->
+<input type="email" id="email" placeholder="E-mail (opcional)">
+
+<input type="time" id="horario" required>
 
 <label>
 TIPO DE AVALIAÇÃO:
@@ -347,15 +317,9 @@ TIPO DE AVALIAÇÃO:
 
 <label class="card-opcao">
 
-<input
-type="radio"
-name="tipo"
-value="clinica"
-required
->
+<input type="radio" name="tipo" value="clinica" required>
 
 <div class="conteudo">
-
 <strong>
 NA CLÍNICA:
 </strong>
@@ -363,21 +327,15 @@ NA CLÍNICA:
 <span>
 ATENDIMENTO NO ESPAÇO PREPARADO E ESTRUTURADO.
 </span>
-
 </div>
 
 </label>
 
 <label class="card-opcao">
 
-<input
-type="radio"
-name="tipo"
-value="domiciliar"
->
+<input type="radio" name="tipo" value="domiciliar">
 
 <div class="conteudo">
-
 <strong>
 DOMICILIAR:
 </strong>
@@ -385,21 +343,15 @@ DOMICILIAR:
 <span>
 ATENDIMENTO NO CONFORTO DA SUA CASA.
 </span>
-
 </div>
 
 </label>
 
 <label class="card-opcao">
 
-<input
-type="radio"
-name="tipo"
-value="online"
->
+<input type="radio" name="tipo" value="online">
 
 <div class="conteudo">
-
 <strong>
 ONLINE:
 </strong>
@@ -407,7 +359,6 @@ ONLINE:
 <span>
 ATRAVÉS DE CHAMADA DE VIDEO.
 </span>
-
 </div>
 
 </label>
@@ -424,26 +375,28 @@ Solicitar Agendamento
 
 <script>
 
-const formulario =
-document.getElementById("formAgendamento");
+const formulario = document.getElementById("formAgendamento");
 
 formulario.addEventListener("submit", function(e){
 
   e.preventDefault();
 
   const nome =
-    document.getElementById("nome").value;
+  document.getElementById("nome").value;
 
   const telefone =
-    document.getElementById("telefone").value;
+  document.getElementById("telefone").value;
 
   const email =
-    document.getElementById("email").value;
+  document.getElementById("email").value;
+
+  const horario =
+  document.getElementById("horario").value;
 
   const tipo =
-    document.querySelector(
-      'input[name="tipo"]:checked'
-    ).value;
+  document.querySelector(
+    'input[name="tipo"]:checked'
+  ).value;
 
   const mensagem = `Olá Patrícia, quero solicitar um agendamento.
 
@@ -453,13 +406,15 @@ Telefone: ${telefone}
 
 Email: ${email}
 
+Horário desejado: ${horario}
+
 Tipo de avaliação: ${tipo}`;
 
   const numero =
-    "555399702812";
+  "555399702812";
 
   const url =
-`https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
 
@@ -472,5 +427,3 @@ Tipo de avaliação: ${tipo}`;
 
 </body>
 </html>
-
-
